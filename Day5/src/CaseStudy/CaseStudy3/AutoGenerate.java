@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 class Travel{
-	public static int bookingCode = 0001;
+	public static int bookingCode;
 	
 	
 	
@@ -79,14 +79,14 @@ public class AutoGenerate {
 						&& (travel.getRideCode() >= 201 
 						&& travel.getRideCode() <= 205) 
 						&& Travel.bookingCode >= 0001){
-					System.out.println(Travel.companyCode + "" + travel.getModeOfTravel() + "" + travel.getRideCode() + "" + Travel.bookingCode);
+					System.out.println(Travel.companyCode + "" + travel.getModeOfTravel() + "" + travel.getRideCode() + "" + String.format("%04d", Travel.bookingCode));
 				}
 				else if(Travel.companyCode == 115 
 						&& travel.getModeOfTravel() == 'B' 
 						&& (travel.getRideCode() >= 301 
 						&& travel.getRideCode() <= 305) 
 						&& Travel.bookingCode >= 0001){
-					System.out.println(Travel.companyCode + "" + travel.getModeOfTravel() + "" + travel.getRideCode() + "" + Integer.toString(Travel.bookingCode));
+					System.out.println(Travel.companyCode + "" + travel.getModeOfTravel() + "" + travel.getRideCode() + "" + String.format("%04d", Travel.bookingCode));
 				}
 				else{
 					System.out.println("Error");
