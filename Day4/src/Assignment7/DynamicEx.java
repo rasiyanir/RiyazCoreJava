@@ -4,7 +4,7 @@ class Student{
 	protected int studentId;
 	protected char studentType;
 	protected String studentName;
-	protected int semesterFees = 12000;
+	final protected int semesterFees = 12000;
 	protected double feesPerMonth;
 	
 	public Student(){
@@ -29,13 +29,12 @@ class Student{
 	public void setStudentName(String fName, String lName) {
 		this.studentName = fName + " " + lName;
 	}
-	public int getSemesterFees() {
-		return semesterFees;
-	}
-
-	public void setSemesterFees(int semesterFees) {
-		this.semesterFees = semesterFees;
-	}
+	/*
+	 * public int getSemesterFees() { return semesterFees; }
+	 * 
+	 * public void setSemesterFees(int semesterFees) { this.semesterFees =
+	 * semesterFees; }
+	 */
 
 	public double getFeesPerMonth() {
 		return feesPerMonth;
