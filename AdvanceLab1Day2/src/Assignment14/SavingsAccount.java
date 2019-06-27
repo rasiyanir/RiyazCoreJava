@@ -13,7 +13,7 @@ public class SavingsAccount extends Account {
 	}
 	
 	public void withdraw(double amount) {
-		if((balance -= amount) >= minimumBalance) {
+		if((balance - amount) >= minimumBalance) {
 			balance -= amount;
 		}
 		else {

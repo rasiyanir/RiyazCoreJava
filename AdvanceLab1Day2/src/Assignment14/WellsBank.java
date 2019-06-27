@@ -6,7 +6,7 @@ public class WellsBank {
 		SavingsAccount johnSA = new SavingsAccount(101, john, 1000);
 		johnSA.deposit(1000);
 		System.out.println(johnSA.balanceEnquiry());
-		johnSA.withdraw(1600);
+		johnSA.withdraw(1400);
 		System.out.println(johnSA.balanceEnquiry());
 		Customer jenny = new Customer(9002, "Jenny", "249 Beltline Dr, Irving", 304216);
 		CurrentAccount jennyCA = new CurrentAccount(201, jenny, 500, 2000);

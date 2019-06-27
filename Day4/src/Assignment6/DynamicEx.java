@@ -26,7 +26,7 @@ class Student{
 	public void getDetails(){
 		System.out.println("Student ID: " + studentId);
 		System.out.println("Student Type: " + studentType);
-		System.out.println("Student Name: " + studentName);
+		
 	}
 }
 
@@ -43,6 +43,7 @@ class DayScholar extends Student{
 	
 	public void getDetails(){
 		super.getDetails();
+		System.out.println("Student Name: " + studentName);
 		System.out.println("Residential Address: " + residentialAddress);
 	}
 }

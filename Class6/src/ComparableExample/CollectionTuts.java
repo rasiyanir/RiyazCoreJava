@@ -24,6 +24,10 @@ public class CollectionTuts {
 	
 }
 
+
+
+
+
 class Student implements Comparable<Student>{
 	int rollNo;
 	int marks;

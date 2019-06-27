@@ -30,7 +30,7 @@ public class MinAccountBalValidation {
 	public static void main(String[] args) {
 		Account account = new Account();
 		account.setAccAmount(5000);
-		if(account.getAccAmount() < 5000){
+		if(account.getAccAmount() < 6000){
 			System.out.println("The balance is below minimum value.");
 		}
 		else{

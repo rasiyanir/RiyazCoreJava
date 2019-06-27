@@ -3,9 +3,9 @@ package Assignment27;
 import java.util.Calendar;
 
 public class Employee {
-	int employeeID;
-	String employeeName;
-	Calendar dateOfBirth;
+	private int employeeID;
+	private String employeeName;
+	private Calendar dateOfBirth;
 	
 	public int getEmployeeID() {
 		return employeeID;

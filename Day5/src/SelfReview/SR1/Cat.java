@@ -19,7 +19,7 @@ public class Cat extends Animal{
 	public static void main(String[] args) {
 		Cat myCat = new Cat();
 		Animal myAnimal = myCat;
-		//Animal.testClassMethod();
+		myCat.testClassMethod();
 		myAnimal.testInstanceMethod();
 	}
 }

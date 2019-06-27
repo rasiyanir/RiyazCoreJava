@@ -9,16 +9,16 @@ public class Student {
 		++studentID;
 	};
 	
-	public Student(int sid, char sType, String sName){
+	public Student(char sType, String sName){
 		this();
 		studentType = sType;
 		studentName = sName;
 	}
 	public static void main(String[] args) {
-		DayScholar dayScholar = new DayScholar(1001, 'D', "Manu", 5, "OOP", 18000,  "NO 32/4 Vijayanagar");
+		DayScholar dayScholar = new DayScholar('D', "Manu", 5, "OOP", 18000,  "NO 32/4 Vijayanagar");
 		dayScholar.calculateFees();
 		dayScholar.displayStudentDetials();
-		DayScholar dayScholar1 = new DayScholar(1001, 'D', "Manu",5, "OOP", 18000, "NO 32/4 Vijayanagar");
+		DayScholar dayScholar1 = new DayScholar('D', "Manu",5, "OOP", 18000, "NO 32/4 Vijayanagar");
 		dayScholar1.calculateFees();
 		dayScholar1.displayStudentDetials();
 		
@@ -34,8 +34,8 @@ class PostGradStudent extends Student{
 	
 
 
-	public PostGradStudent(int sid, char sType, String sName, int pCourseId, String pCourseName, int pCourseFees){
-		super(sid, sType, sName);
+	public PostGradStudent(char sType, String sName, int pCourseId, String pCourseName, int pCourseFees){
+		super(sType, sName);
 		setPostCourseID(pCourseId);
 		setCourseName(pCourseName);
 		setPostCourseFees(pCourseFees);
@@ -82,8 +82,8 @@ class DayScholar extends PostGradStudent{
 	private String residentialAddress;
 	private double fee;
 	
-	public DayScholar(int sid, char sType, String sName,int pCourseId, String pCourseName, int pCourseFees,  String rAddress){
-		super(sid, sType, sName, pCourseId, pCourseName, pCourseFees );
+	public DayScholar(char sType, String sName,int pCourseId, String pCourseName, int pCourseFees,  String rAddress){
+		super(sType, sName, pCourseId, pCourseName, pCourseFees );
 		residentialAddress = rAddress;
 	}
 	

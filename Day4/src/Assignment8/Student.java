@@ -75,8 +75,8 @@ public abstract class Student {
 		student.setResidentialStatus(args[0]);
 		
 		if(student.getResidentialStatus().equalsIgnoreCase("Hostelite")){
-			student = new Hostelite(1, 'F', "Leon", "Ward", 2000, "UHCL", 201);
-			student.calculateFees(12000);
+			student = new Hostelite(1, 'F', "Leon", "Ward", 1000, "UHCL", 201);
+			student.calculateFees(6000);
 			student.displayStudentDetails();
 		}
 		else{

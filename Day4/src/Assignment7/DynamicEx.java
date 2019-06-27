@@ -48,7 +48,7 @@ class Student{
 		feesPerMonth = (double)semesterFees/6.0;
 	}
 	
-	public void displayDetail(){
+	final public void displayDetails(){
 		System.out.println("Student ID: " + studentId);
 		System.out.println("Student Type: " + studentType);
 		System.out.println("Student Name: " + studentName);
@@ -95,7 +95,7 @@ public class DynamicEx {
 		dayScholar.setStudentName("Thomas", "Ward");
 		dayScholar.setResidentialAddress("No 32/3 Vijayanagar");
 		dayScholar.calculateFees();
-		dayScholar.displayDetail();
+		dayScholar.displayDetails();
 		dayScholar.displayDayDetails();
 	}
 }

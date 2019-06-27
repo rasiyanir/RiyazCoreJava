@@ -4,7 +4,7 @@ public class WellsBank {
 	public static void main(String[] args) {
 		Customer john = new Customer(9001, "John", "124 silicon Dr, Irving", 32468);
 		//Account account = new Account();
-		SavingsAccount johnSA = new SavingsAccount(101, john, 1000);
+		Account johnSA = new SavingsAccount(101, john, 1000);
 		johnSA.deposit(1000);
 		System.out.println(johnSA.balanceEnquiry());
 		johnSA.withdraw(1600);
